@@ -1,0 +1,127 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* navbar */
+.navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+        color: whitesmoke;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 10px;
+}
+
+body {
+    background-image: url("ino.jpg");
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: gold;
+}
+.header-content {
+    font-size: 4vmin;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(212, 19, 58);
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background: rgb(213, 44, 44);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.logo {
+    color: gold;
+}
+.ramp {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Mobile device */
+@media only screen and (max-width:850px){
+    .menu-btn{
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(72, 72, 116);
+        margin-top: -900px;
+        transition: all 0.8s ease;
+    }
+    .mobile-menu{
+        margin: 0px;
+        border-bottom-right-radius: 42%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+
+    }
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    
+}
+
+/* Events */
+.section{
+    width: 80px;
+    margin: 80px auto;
+
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(0, 139, 58);
+}
